@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-  </head>
 
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">
-      Please fill out the following survey form to help us improve our website.
-    </p>
-    <form id="survey-form">
-      <label id="name-label">Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required />
-      <label id="email-label">Email</label>
-      <input id="email" type="email" placeholder="Enter your Email" required />
-      <label id="number-label">Age</label>
-      <input id="number" type="number" placeholder="Age" min="0" max="100" />
-    </form>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">
+    Please fill out the following survey form to help us improve our website.
+  </p>
 
-    <script src="js/index.js"></script>
-  </body>
+  <form id="survey-form">
+    <label id="name-label">Name</label>
+    <input id="name" type="text" placeholder="Enter your name" required />
+    <label id="email-label">Email</label>
+    <input id="email" type="email" placeholder="Enter your Email" required />
+    <label id="number-label">Age</label>
+    <input id="number" type="number" placeholder="Age" min="0" max="100" />
+
+    <select name="select current role" id="dropdown">
+      <option value="">Student</option>
+      <option value="">Fulltime Job</option>
+      <option value="">Fulltime Learner</option>
+      <option value="">Prefer not to say</option>
+      <option value="">Other</option>
+    </select>
+    <div>
+
+      <input type="radio" name="recomend" value="recommend">
+      <label for="Definately">Definately</label> <br>
+      <input type="radio" name="recomend" value="recommend1">
+      <label for="Maybe">Maybe</label> <br>
+      <input type="radio" name="recomend" value="recommend2">
+      <label for="Not sure">Not Sure</label> <br>
+
+    </div>
+
+    <label for="Front-end">
+      <input type="checkbox" value="Front-end">Front-end Projects</label>
+    <label for="Back-end">
+      <input type="checkbox" value="Back-end">Back-end Projects</label>
+    <label for="Data Visualization">
+      <input type="checkbox" value="Data Visualization">Data Visualization</label>
+    <label for="Challenges">
+      <input type="checkbox" value="Challenges">Challenges</label>
+    <label for="Gitter help room">
+      <input type="checkbox" value="Gitter help room">Gitter help room</label>
+    <label for="Videos">
+      <input type="checkbox" value="Videos">Videos</label>
+    <label for="City Meetups">
+      <input type="checkbox" value="Wiki">Wiki</label>
+    <label for="Forum">
+      <input type="checkbox" value="Additional Courses">Additional Courses</label>
+
+    <textarea rows="4" cols="50" name="comment" form="usrform">
+        Enter text here...</textarea>
+
+
+        <button id="submit">Submit</button>
+
+
+
+
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <script src="js/index.js"></script>
+</body>
+
 </html>
